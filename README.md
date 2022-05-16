@@ -21,4 +21,4 @@ However, sometimes the image content we are tracking in the first frame can diff
 
 I tested my tracker on the following two videos, where my targets were the car and the girl, respectively.
 ![tracking_girl](https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_girl.gif)
-
+![tracking_car](https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_car.gif)
