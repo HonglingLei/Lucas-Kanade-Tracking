@@ -20,5 +20,7 @@ The first tracker tracks a particular template that is moving in the scene. For 
 However, sometimes the image content we are tracking in the first frame can differ from the one in the last frame, because we update the template after processing each frame and the error can accumulate. This is known as the template drifting problem, and several correction methods are ellaborated in [this paper *The Template Update Problem*](https://www.ri.cmu.edu/pub_files/pub4/matthews_iain_2003_2/matthews_iain_2003_2.pdf) by Iain Matthews et al. I used the strategy 3 mentioned in page 4 for drift correction. When the change from the previous frame to the current one is small enough, I used the previous frame region as the updated template. However, if the extracted area varies too much, I used the original template to correct it to make sure it's on the right track.
 
 I tested my tracker on the following two videos, where my targets were the car and the girl, respectively.
-![tracking_girl](https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_girl.gif)
-![tracking_car](https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_car.gif)
+<img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_car.gif" width="400">
+<img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_girl.gif" width="400">
+
+
