@@ -23,6 +23,8 @@ I tested my tracker on the following two videos, where my targets were the car a
 <img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_car.gif" width="400">
 <img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_girl.gif" width="400">
 
+This tracker can also track multiple targets at the same time by setting up multiple templates in the beginning.
+
 
 ## Tracker 2: Motion Detection
 The second tracker computes the dominant affine motion in a sequence of images and identifies moving objects by comparing pixel coordinates. Instead of detecting a specified template/target, now any moving objects would be detected and highlighted.
