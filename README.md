@@ -31,4 +31,4 @@ I tested my tracker on the following two videos, detecting ant and car motions, 
 <img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_ant.gif" width="400">
 <img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_aerial.gif" width="400">
 
-Moreover, the inverse compositional extension can be used to speed up the computation and make Lucas-Kanade tracknig more efficient.
+Moreover, the inverse compositional extension can be used to speed up the computation and make Lucas-Kanade tracking more efficient.
