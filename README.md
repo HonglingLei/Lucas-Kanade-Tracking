@@ -24,3 +24,11 @@ I tested my tracker on the following two videos, where my targets were the car a
 <img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_girl.gif" width="400">
 
 
+## Tracker 2: Motion Detection
+The second tracker computes the dominant affine motion in a sequence of images and identifies moving objects by comparing pixel coordinates. Instead of detecting a specified template/target, now any moving objects would be detected and highlighted.
+
+I tested my tracker on the following two videos, detecting ant and car motions, respectively.
+<img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_ant.gif" width="400">
+<img src="https://github.com/HonglingLei/Lucas-Kanade-Tracking/blob/main/data/tracking_aerial.gif" width="400">
+
+Moreover, the inverse compositional extension can be used to speed up the computation and make Lucas-Kanade tracknig more efficient.
