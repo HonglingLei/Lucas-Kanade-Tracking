@@ -15,7 +15,7 @@ The following two papers are useful for understanding Lucas-Kanade tracking and 
 
 
 ## Tracker 1: Template Matching
-The first tracker tracks a particular template that is moving in the scene. For each frame, I extracted a rectangle describing the picel coordinates, and compared it with the previous frame to find the least-different/most-similar area. This is done by iterating until the total pixel changes fall below a threshold. A useful package is `RectBivariateSpline` in `scipy.interpolate`.
+The first tracker tracks a particular template that is moving in the scene. For each frame, I extracted a rectangle describing the pixel coordinates, and compared it with the previous frame to find the least-different/most-similar area. This is done by iterating until the total pixel changes fall below a threshold. A useful package is `RectBivariateSpline` in `scipy.interpolate`.
 
 However, sometimes the image content we are tracking in the first frame can differ from the one in the last frame, because we update the template after processing each frame and the error can accumulate. This is known as the template drifting problem, and several correction methods are ellaborated in [this paper *The Template Update Problem*](https://www.ri.cmu.edu/pub_files/pub4/matthews_iain_2003_2/matthews_iain_2003_2.pdf) by Iain Matthews et al. I used the strategy 3 mentioned in page 4 for drift correction. When the change from the previous frame to the current one is small enough, I used the previous frame region as the updated template. However, if the extracted area varies too much, I used the original template to correct it to make sure it's on the right track.
 
